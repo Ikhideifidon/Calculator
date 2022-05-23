@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" minWidth="-Infinity" prefHeight="400.0" prefWidth="410.0" spacing="10.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ikhideifidon.calculator.MainController">
+    <padding>
+        <Insets bottom="20.0" left="30.0" right="20.0" top="20.0" />
+    </padding>
+   <StackPane id="pane" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #8fbc8f; -fx-background-insets: 10 20 10 20; -fx-background-radius: 10;">
+      <Label fx:id="result" prefHeight="17.0" prefWidth="271.0" style="-fx-border-radius: 50;" text="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <effect>
+         <DropShadow />
+      </effect>
+   </StackPane>
+   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="405.0" spacing="10.0">
+      <Button mnemonicParsing="false" onAction="#processClearOperation" prefWidth="60.0" text="C">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="±">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="﹪">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefWidth="60.0" text="÷">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="⅟x">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="sin">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefWidth="60.0" text="×">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="In">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="cos">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefWidth="60.0" text="-">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="x²">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="tan">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefWidth="60.0" text="+">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="√x">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="∛x">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="35.0" prefWidth="120.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text=".">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefWidth="60.0" text="=">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefWidth="60.0" text="xⁿ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefWidth="60.0" text="x!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </HBox>
+</VBox>
